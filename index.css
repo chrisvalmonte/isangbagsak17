@@ -14,9 +14,7 @@ body
 
 header > .poster
 {
-	max-height: 85vh;
-	padding-bottom: 1vh;
-	width: 100vw;
+	width: 100%;
 }
 
 @media screen and (max-width: 450px)
@@ -41,8 +39,20 @@ header > .poster
 
 	.poster-horizontal
 	{
+		background-color: #f0f0f0;
 		display: block;
+		margin: auto;
+		max-width: 1200px;
 	}
+}
+
+#menu
+{
+	background-color: #fefefe;
+	display: none;
+	height: 100vh;
+	position: fixed;
+	width: 100vw;
 }
 
 .navbar
@@ -70,7 +80,7 @@ header > .poster
 
 .navbar.affix
 {
-	animation: navbar-affix 1s ease-in-out;
+	animation: navbar-affix .5s ease-in-out;
 	background: #fcdc51;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
 	position: fixed;
@@ -119,12 +129,8 @@ header > .poster
 	font-family: 'Oswald', sans-serif;
 	font-size: 4em;
 	padding-bottom: 30px;
+	padding-top: 30px;
 	text-transform: uppercase;
-}
-
-#welcome
-{
-	margin-top: 75px;
 }
 
 #welcome .content
@@ -134,8 +140,8 @@ header > .poster
 	padding-right: 15px;
 }
 
-#welcome .promo-vid
+#welcome .instagram-media
 {
-	height: 45vh;
-	width: 100%;
+	display: block;
+	margin: 0 auto;
 }

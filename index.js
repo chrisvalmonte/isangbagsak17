@@ -1,13 +1,13 @@
-$(document).ready(function(){
-	$('nav').affix({
-		offset: { top: $('header').outerHeight(true) + $('nav').innerHeight() - 20 }
+$(document).ready(function() {
+
+	$nav = $('nav');
+	$nav.affix({
+		offset: { top: $('nav').height() }
 	});
 
-	$('nav').on('affix.bs.affix', function(){
-		$('main').attr('style', 'margin-top: 152px');
-	});
-
-	$('nav').on('affix-top.bs.affix', function(){
-		$('main').attr('style', 'margin-top: 0');
+	$menuBtn = $nav.find('.menu-btn');
+	$menuBtn.on ('click', function() {
+		$menu = $('#menu');
+		$menu.fadeIn();
 	});
 });
