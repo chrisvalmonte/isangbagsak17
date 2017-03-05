@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+html,
+body
+{
+	width: 100%;
+}
+
+body
+{
+	background-color: #fefefe;
+	font-size: 16px;
+}
+
+header > .poster
+{
+	max-height: 85vh;
+	padding-bottom: 1vh;
+	width: 100vw;
+}
+
+@media screen and (max-width: 450px)
+{
+	.poster-vertical
+	{
+		display: block;
+	}
+
+	.poster-horizontal
+	{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 451px)
+{
+	.poster-vertical
+	{
+		display: none;
+	}
+
+	.poster-horizontal
+	{
+		display: block;
+	}
+}
+
+.navbar
+{
+	background-color: #fefefe;
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+}
+
+@keyframes navbar-affix
+{
+	0%
+	{
+		top: -100px;
+	}
+
+	100%
+	{
+		top: 0;
+	}
+}
+
+.navbar.affix
+{
+	animation: navbar-affix .3s ease-in-out;
+	background: #fcdc51;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.hashtag
+{
+	color: #000;
+	cursor: pointer;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5em;
+	padding: 10px 15px;
+}
+
+.hashtag:hover,
+.hashtag:focus
+{
+	color: #1249d4;
+	text-decoration: none;
+}
+
+.menu-btn
+{
+	font-size: 2.5em;
+	padding: calc(37px/2) 15px;
+}
+
+@media screen and (max-width: 700px)
+{
+	.section-title
+	{
+		text-align: center;
+	}
+}
+
+.section-title
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 4em;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
+
+#welcome .content
+{
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#welcome .promo-vid
+{
+	height: 45vh;
+	width: 100%;
+}
