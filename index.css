@@ -101,6 +101,11 @@ header > .poster
 	padding: calc(37px/2) 15px;
 }
 
+.menu-btn:hover
+{
+	color: #d20607;
+}
+
 @media screen and (max-width: 700px)
 {
 	.section-title
@@ -115,6 +120,11 @@ header > .poster
 	font-size: 4em;
 	padding-bottom: 30px;
 	text-transform: uppercase;
+}
+
+#welcome
+{
+	margin-top: 75px;
 }
 
 #welcome .content

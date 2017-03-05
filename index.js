@@ -4,7 +4,7 @@ $(document).ready(function(){
 	});
 
 	$('nav').on('affix.bs.affix', function(){
-		$('main').attr('style', 'margin-top: 77px');
+		$('main').attr('style', 'margin-top: 152px');
 	});
 
 	$('nav').on('affix-top.bs.affix', function(){
