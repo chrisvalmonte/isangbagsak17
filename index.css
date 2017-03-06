@@ -154,8 +154,34 @@ header > .poster
 
 
 
-#workshops h4
+#program
 {
+	font-family: 'Oswald', sans-serif;
+}
+
+#program .itinerary
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+#program .time
+{
+	display: inline-block;
+	width: 7.5em;
+}
+
+#program .time,
+#program .schedule
+{
+	font-size: 1.1em;
+}
+
+
+
+#workshops h3
+{
+	font-family: 'Oswald', sans-serif;
 	margin-top: -30px;
 	text-align: center;
 }
@@ -209,8 +235,9 @@ header > .poster
 
 .workshop > .num
 {
+	display: inline-block;
 	font-size: 3em;
-	padding-right: 15px;
+	width: 1.3em;
 }
 
 .workshop > .name
