@@ -1,13 +1,18 @@
 $(document).ready(function() {
 
-	$nav = $('nav');
-	$nav.affix({
-		offset: { top: $('nav').height() }
+	$navbar = $('#navbar');
+	$navbar.affix({
+		offset: { top: $navbar.height() }
 	});
 
-	$menuBtn = $nav.find('.menu-btn');
-	$menuBtn.on ('click', function() {
-		$menu = $('#menu');
-		$menu.fadeIn();
-	});
 });
+
+function openNav() {
+	$menu = $('#menu');
+	$menu.attr('style', 'height: 100%;')
+}
+
+function closeNav() {
+	$menu = $('#menu');
+	$menu.attr('style', 'height: 0;')
+}
