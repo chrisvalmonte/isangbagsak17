@@ -1,9 +1,21 @@
 $(document).ready(function() {
 
 	$navbar = $('#navbar');
-	$navbar.affix({
-		offset: { top: $navbar.height() }
-	});
+	$navbar
+		.affix({
+			offset: {
+				top: $navbar.height() + $('header').height(),
+				bottom: function(){
+					return (this.bottom = $('footer').outerHeight(true))
+				}
+			}
+		})
+		.on('', function() {
+
+		})
+		.on('', function() {
+
+		});
 
 });
 

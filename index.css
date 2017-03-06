@@ -45,6 +45,15 @@ header > .poster
 	}
 }
 
+footer
+{
+	background: url('images/footer.png') center-bottom no-repeat;
+	height: 100px;
+	width: 100%;
+}
+
+
+
 #menu
 {
 	background-color: #fefefe;
