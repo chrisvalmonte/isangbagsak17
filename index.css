@@ -21,7 +21,7 @@ header
 header > .logo
 {
 	display: block;
-	margin: 16.5vh auto;
+	margin: 10vh auto;
 	max-height: 70vh;
 	max-width: 100%;
 	width: auto;
@@ -76,6 +76,7 @@ footer > .footer-action .fa-home
 
 @media screen and (min-width: 768px)
 {
+	.navbar-brand,
 	.navbar-nav > li > a
 	{
 		padding-bottom: 25px;
@@ -87,12 +88,12 @@ footer > .footer-action .fa-home
 {
 	0%
 	{
-		top: -100px;
+		opacity: 0;
 	}
 
 	100%
 	{
-		top: 0;
+		opacity: 1;
 	}
 }
 
@@ -110,35 +111,26 @@ footer > .footer-action .fa-home
 .navbar-brand
 {
 	color: #000;
-	cursor: pointer;
-	font-size: 2em;
-	padding: 25px 20px;
+	font-size: 1.5em;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus
 {
-	color: #1249d4;
 	text-decoration: none;
 }
 
-.navbar-collapse:hover,
-.navbar-collapse:focus
+.navbar-toggle
 {
-	color: #d20607;
+	margin-right: 15px;
+	margin-top: 13px;
+	padding: 0;
 }
 
-.navbar .menu-icon
+.menu-icon
 {
-	font-size: 4rem;
+	font-size: 2.5rem;
 }
-
-.navbar .menu-icon:hover,
-.navbar .menu-icon:focus
-{
-	color: #d20607;
-}
-
 
 
 
