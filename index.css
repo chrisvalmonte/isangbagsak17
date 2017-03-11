@@ -8,69 +8,79 @@ body
 
 body
 {
-	background-color: #fefefe;
+	background-color: #fcfcfc;
 	font-size: 16px;
 }
 
-header > .poster
+header
 {
-	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
-@media screen and (max-width: 450px)
+header > .logo
 {
-	.poster-vertical
-	{
-		display: block;
-	}
-
-	.poster-horizontal
-	{
-		display: none;
-	}
+	display: block;
+	margin: 16.5vh auto;
+	max-height: 70vh;
+	max-width: 100%;
+	width: auto;
 }
 
-@media screen and (min-width: 451px)
+@media screen and (min-width: 500px)
 {
-	.poster-vertical
+	header > .logo
 	{
-		display: none;
-	}
-
-	.poster-horizontal
-	{
-		display: block;
-		margin: auto;
-		max-height: 700px;
+		margin-bottom: 0;
+		margin-top: 0;
 	}
 }
 
-footer
+footer.navbar-fixed-bottom
 {
-	background: url('images/footer.png') center-bottom no-repeat;
-	height: 100px;
-	width: 100%;
+	background-color: #d9d9d9;
+	border-top: 1px solid #bfbfbf;
+}
+
+footer > .footer-action
+{
+	background: transparent;
+	color: #444;
+	font-size: 2.2rem;
+}
+
+footer > .footer-action .fa-home
+{
+	font-size: 2.8rem;
+	padding-top: 5px;
 }
 
 
 
-#menu
+.instagram-media
 {
-	background-color: #fefefe;
-	display: none;
-	height: 100vh;
-	position: fixed;
-	width: 100vw;
+	display: block;
+	margin: 0 auto !important;
 }
+
+
 
 .navbar
 {
-	background-color: #fefefe;
-	background-image: none;
+	background-color: transparent;
 	border: none;
-	border-radius: 0;
 	box-shadow: none;
+	font-family: 'Oswald', sans-serif;
 	margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px)
+{
+	.navbar-nav > li > a
+	{
+		padding-bottom: 25px;
+		padding-top: 25px;
+	}
 }
 
 @keyframes navbar-affix
@@ -89,40 +99,48 @@ footer
 .navbar.affix
 {
 	animation: navbar-affix .5s ease-in-out;
-	background: #fcdc51;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+	background: #ffd400;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 10;
 }
 
-.hashtag
+.navbar-brand
 {
 	color: #000;
 	cursor: pointer;
-	font-family: 'Oswald', sans-serif;
 	font-size: 2em;
-	padding: 15px 15px;
+	padding: 25px 20px;
 }
 
-.hashtag:hover,
-.hashtag:focus
+.navbar-brand:hover,
+.navbar-brand:focus
 {
 	color: #1249d4;
 	text-decoration: none;
 }
 
-.menu-btn
-{
-	font-size: 2.5em;
-	padding: calc(37px/2) 15px;
-}
-
-.menu-btn:hover
+.navbar-collapse:hover,
+.navbar-collapse:focus
 {
 	color: #d20607;
 }
+
+.navbar .menu-icon
+{
+	font-size: 4rem;
+}
+
+.navbar .menu-icon:hover,
+.navbar .menu-icon:focus
+{
+	color: #d20607;
+}
+
+
+
 
 .section-title
 {
@@ -135,11 +153,12 @@ footer
 	text-transform: uppercase;
 }
 
+
+
 #welcome .content
 {
-	background-color: #eee;
-	border-radius: 7px;
-	box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);
+	background-color: #fff;
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
 	display: block;
 	margin-bottom: 30px;
 	margin-left: auto;
@@ -201,7 +220,7 @@ footer
 	#program .time,
 	#program .schedule
 	{
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 }
 
@@ -210,7 +229,7 @@ footer
 	#program .time,
 	#program .schedule
 	{
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 }
 
@@ -225,11 +244,14 @@ footer
 
 .workshop
 {
+	border: 3px solid transparent;
+	border-radius: 1px;
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
 	cursor: pointer;
-	height: 100px;
-	padding: 15px;
+	margin-bottom: 10px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	transition: background 200ms ease-out;
 	white-space: nowrap;
 }
 
@@ -237,6 +259,7 @@ footer
 .workshop:focus
 {
 	background: #000 !important;
+	box-shadow: none;
 	color: #fefefe !important;
 }
 
@@ -273,11 +296,18 @@ footer
 .workshop > .num
 {
 	display: inline-block;
-	font-size: 3em;
+	padding-bottom: 15px;
+	padding-top: 15px;
 	width: 1.3em;
 }
 
-.workshop > .name
+.workshop > .num::after
+{
+	content: '.';
+}
+
+.workshop > .name,
+.workshop > .num
 {
 	font-size: 2em;
 }
@@ -286,4 +316,45 @@ footer
 {
 	background: transparent;
 	height: 100px;
+}
+
+
+
+.modal-content
+{
+	border-radius: 0;
+}
+
+.modal-header
+{
+	border-bottom: none;
+}
+
+.modal-header .close
+{
+	font-size: 2em;
+	position: absolute;
+	right: 15px;
+}
+
+.modal-title
+{
+	margin-top: 20px;
+}
+
+.modal-header,
+#workshop-details .subtitle
+{
+	text-align: center;
+}
+
+.modal-body
+{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.modal-footer
+{
+	border-top: none;
 }

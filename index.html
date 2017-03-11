@@ -23,34 +23,41 @@
 
 	<body>
 
+<nav id="navbar" class="navbar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="menu-icon fa fa-bars"></span>
+			</button>
+			<a class="navbar-brand" href="#">#nwfasa17</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#welcome">Welcome</a></li>
+				<li><a href="#program">Program</a></li>
+				<li><a href="#workshops">Workshops</a></li>
+				<li><a href="#keynote-speaker">Keynote Speaker</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<!--
 		<aside id="navbar" class="navbar">
 			<div class="container-fluid">
 				<a class="hashtag pull-left" href="#">#nwfasa17</a>
 				<span class="menu-btn fa fa-bars pull-right" title="Menu" role="button" onclick="openNav()"></span>
 			</div>
 		</aside>
-
-		<nav id="menu" class="overlay">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="overlay-content">
-				<a href="#">Welcome</a>
-				<a href="#">Program</a>
-				<a href="#">Campus Map</a>
-				<a href="#">Workshops</a>
-				<a href="#">Keynote Speaker</a>
-				<a href="#">Email NWFASA</a>
-				<a href="#">Emergency Contact</a>
-			</div>
-		</nav>
+	-->
 
 		<header>
-			<img class="poster poster-vertical img-responsive" src="images/poster-vertical.jpg" alt="Isang Bagsak: Moving Forward in Solidarity">
-			<img class="poster poster-horizontal img-responsive" src="images/poster.jpg" alt="Isang Bagsak: Moving Forward in Solidarity">
+			<img class="logo" src="images/header-logo.png" alt="Isang Bagsak: Moving Forward in Solidarity">
 		</header>
 
 		<main>
-			<section id="welcome">
-				<div class="col-xs-12">
+			<section class="container-fluid">
+				<div id="welcome">
 					<div class="content">
 						<h1 class="section-title">Welcome</h1>
 						<p>On behalf of the Northwest Filipino American Student Alliance, FASA sa UW Bothell welcomes you to NWFASA Conference 2017! Our theme for the 22nd Annual NWFASA Conference is <strong>“Isang Bagsak: Moving Forward in Solidarity.“</strong></p>
@@ -63,11 +70,11 @@
 				</div>
 			</section>
 
-			<section id="program">
-				<div class="col-xs-12">
+			<section class="container-fluid">
+				<div id="program">
 					<div class="container">
 						<h1 class="section-title">Program</h1>
-						<h2>April 1, 2017</h2>
+						<h2>Saturday April 1st, 2017</h2>
 						<ul class="itinerary">
 							<li>
 								<span class="time">7:00AM-8:45AM</span>
@@ -136,99 +143,126 @@
 						</ul>
 					</div>
 				</div>
-			</section>
+			</section> <!-- #program -->
 
-			<section id="workshops">
-				<div class="col-xs-12">
+			<section class="container-fluid">
+				<div id="workshops">
 					<h1 class="section-title">Workshops</h1>
 					<h3>(Click on a workshop for more info)</h3>
 				</div>
 
-				<div class="workshop social col-xs-12 col-md-6" role="btn">
-					<span class="num">1.</span>
-					<span class="name">Cross The Line</span>
-				</div>
-				<div class="workshop social col-xs-12 col-md-6" role="btn">
-					<span class="num">2.</span>
-					<span class="name"><i>TALAGANG</i> SLAYING!</span>
-				</div>
-				<div class="workshop social col-xs-12 col-md-6" role="btn">
-					<span class="num">3.</span>
-					<span class="name">Pin@y Zumba</span>
-				</div>
-				<div class="workshop social col-xs-12 col-md-6" role="btn">
-					<span class="num">4.</span>
-					<span class="name">TBA</span>
-				</div>
+				<div class="container">
+					<div class="workshop social col-xs-12 col-md-6" role="btn">
+						<span class="num">1</span>
+						<span class="name">Cross The Line</span>
+					</div>
+					<div class="workshop social col-xs-12 col-md-6" role="btn">
+						<span class="num">2</span>
+						<span class="name"><i>TALAGANG</i> SLAYING!</span>
+					</div>
+					<div class="workshop social col-xs-12 col-md-6" role="btn">
+						<span class="num">3</span>
+						<span class="name">Pin@y Zumba</span>
+					</div>
+					<div class="workshop social col-xs-12 col-md-6" role="btn">
+						<span class="num">4</span>
+						<span class="name">TBA</span>
+					</div>
 
-				<div class="workshop political col-xs-12 col-md-6" role="btn">
-					<span class="num">5.</span>
-					<span class="name"><i>Kamayan</i>: Taking Liberation Into Our Own Hands</span>
-				</div>
-				<div class="workshop political col-xs-12 col-md-6" role="btn">
-					<span class="num">6.</span>
-					<span class="name">Dismantling anti-blackness in the Pilipinx community</span>
-				</div>
-				<div class="workshop political col-xs-12 col-md-6" role="btn">
-					<span class="num">7.</span>
-					<span class="name">Through their Eyes to Our's: Creating Unity with an Ocean Between</span>
-				</div>
-				<div class="workshop political col-xs-12 col-md-6" role="btn">
-					<span class="num">8.</span>
-					<span class="name">From the PNW to the Philippines - Typhoon Nina and Calling Youth and Students to Action</span>
-				</div>
-				<div class="workshop political col-xs-12 col-md-6" role="btn">
-					<span class="num">9.</span>
-					<span class="name">One Billion Rising</span>
-				</div>
-				<div class="workshop-spacer col-md-6 hidden-md-down"></div>
+					<div class="workshop political col-xs-12 col-md-6" role="btn">
+						<span class="num">5</span>
+						<span class="name"><i>Kamayan</i>: Taking Liberation Into Our Own Hands</span>
+					</div>
+					<div class="workshop political col-xs-12 col-md-6" role="btn">
+						<span class="num">6</span>
+						<span class="name">Dismantling anti-blackness in the Pilipinx community</span>
+					</div>
+					<div class="workshop political col-xs-12 col-md-6" role="btn">
+						<span class="num">7</span>
+						<span class="name">Through their Eyes to Our's: Creating Unity with an Ocean Between</span>
+					</div>
+					<div class="workshop political col-xs-12 col-md-6" role="btn">
+						<span class="num">8</span>
+						<span class="name">From the PNW to the Philippines - Typhoon Nina and Calling Youth and Students to Action</span>
+					</div>
+					<div class="workshop political col-xs-12 col-md-6" role="btn">
+						<span class="num">9</span>
+						<span class="name">One Billion Rising</span>
+					</div>
+					<div class="workshop-spacer col-md-6 hidden-xs hidden-sm"></div>
 
-				<div class="workshop educational col-xs-12 col-md-6" role="btn">
-					<span class="num">10.</span>
-					<span class="name">Take Back Our Education: People First, Not Profit and War</span>
-				</div>
-				<div class="workshop educational col-xs-12 col-md-6" role="btn">
-					<span class="num">11.</span>
-					<span class="name">Meaningful Work: Leading Lives of Purpose & Impact</span>
-				</div>
-				<div class="workshop educational col-xs-12 col-md-6" role="btn">
-					<span class="num">12.</span>
-					<span class="name">Don’t <i>Dabog</i>: Engaging in Call-Out Culture and Practicing Humility and Grace</span>
-				</div>
-				<div class="workshop educational col-xs-12 col-md-6" role="btn">
-					<span class="num">13.</span>
-					<span class="name">Failure and Growth</span>
-				</div>
-				<div class="workshop cultural col-xs-12 col-md-6" role="btn">
-					<span class="num">14.</span>
-					<span class="name">Filipino Martial Arts</span>
-				</div>
-				<div class="workshop cultural col-xs-12 col-md-6" role="btn">
-					<span class="num">15.</span>
-					<span class="name">The Heart of Activism: Taboo or Nah?</span>
-				</div>
-				<div class="workshop cultural col-xs-12 col-md-6" role="btn">
-					<span class="num">16.</span>
-					<span class="name">Music of the Motherland</span>
-				</div>
-			</section>
+					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+						<span class="num">10</span>
+						<span class="name">Take Back Our Education: People First, Not Profit and War</span>
+					</div>
+					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+						<span class="num">11</span>
+						<span class="name">Meaningful Work: Leading Lives of Purpose & Impact</span>
+					</div>
+					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+						<span class="num">12</span>
+						<span class="name">Don’t <i>Dabog</i>: Engaging in Call-Out Culture and Practicing Humility and Grace</span>
+					</div>
+					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+						<span class="num">13</span>
+						<span class="name">Failure and Growth</span>
+					</div>
 
-			<section id="keynote-speaker">
-				<div class="col-xs-12">
+					<div class="workshop cultural col-xs-12 col-md-6" role="btn">
+						<span class="num">14</span>
+						<span class="name">Filipino Martial Arts</span>
+					</div>
+					<div class="workshop cultural col-xs-12 col-md-6" role="btn">
+						<span class="num">15</span>
+						<span class="name">The Heart of Activism: Taboo or Nah?</span>
+					</div>
+					<div class="workshop cultural col-xs-12 col-md-6" role="btn">
+						<span class="num">16</span>
+						<span class="name">Music of the Motherland</span>
+					</div>
+				</div> <!-- .container -->
+			</section> <!-- #workshops -->
+
+			<section class="container-fluid">
+				<div id="keynote-speaker">
 					<h1 class="section-title">Keynote Speaker</h1>
 				</div>
 			</section>
 
-			<section id="sponsors">
-				<div class="col-xs-12">
+			<section class="container-fluid">
+				<div id="sponsors">
 					<h1 class="section-title">Sponsors</h1>
 				</div>
 			</section>
 
 		</main>
 
-		<footer>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#workshop-details">Open Modal</button>
 
+		<aside id="workshop-details" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span class="fa fa-window-close"></span></button>
+						<h3 class="modal-title">Workshop #<span class="num">1</span></h3>
+						<h4 class="subtitle"><span class="name">Cross The Line</span></h4>
+					</div>
+					<div class="modal-body">
+						“Cross the Line” is a powerful, interactive, and effective activity that builds diversity awareness within a group. We are going to help identify the similarities and differences we have amongst each other. We want to acknowledge and address those differences, but also bring to the surface other differences that we may not have recognized. The goals of this activity include helping participants learn about themselves, providing them with opportunity to reflect upon their self- and cultural identity, allowing the community involved to appreciate its own diversity more and learning to treat each other like the diverse human beings we all are, instead of allowing ourselves to be divided by our diversity. We want to empower the group by breaking down stereotypes and assumptions, produced by our cultures and experiences, and make it easier to know one another as human beings.
+					</div>
+					<div class="modal-footer">
+						<h5 class="subtitle">By Christine Tabila and Kennaro Samrith</h5>
+					</div>
+				</div>
+
+			</div>
+		</aside>
+
+		<footer class="navbar navbar-fixed-bottom">
+			<button class="footer-action col-xs-4 btn"><span class="fa fa-envelope"></span></button>
+			<a class="footer-action col-xs-4 btn" role="button" href="https://nwfasa.wordpress.com/"><span class="fa fa-home"></span></a>
+			<a class="footer-action col-xs-4 btn" role="button" target="_blank" href="https://www.uwb.edu/getattachment/visitors/directions/uw-bothell-campus-map-update-apr-16.pdf"><span class="fa fa-map"></span></a>
 		</footer>
 
 		<!-- TODO: email redirect -->

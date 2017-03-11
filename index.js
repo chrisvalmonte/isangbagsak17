@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$navbar
 		.affix({
 			offset: {
-				top: $navbar.height() + $('header').height(),
+				top: $navbar.height(),
 				bottom: function(){
 					return (this.bottom = $('footer').outerHeight(true))
 				}
