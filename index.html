@@ -23,33 +23,25 @@
 
 	<body>
 
-<nav id="navbar" class="navbar">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="menu-icon fa fa-bars"></span>
-			</button>
-			<a class="navbar-brand" href="#">#nwfasa17</a>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#welcome">Welcome</a></li>
-				<li><a href="#program">Program</a></li>
-				<li><a href="#workshops">Workshops</a></li>
-				<li><a href="#keynote-speaker">Keynote Speaker</a></li>
-				<li><a href="#sponsors">Sponsors</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
-	<!--
-		<aside id="navbar" class="navbar">
+		<nav id="navbar" class="navbar">
 			<div class="container-fluid">
-				<a class="hashtag pull-left" href="#">#nwfasa17</a>
-				<span class="menu-btn fa fa-bars pull-right" title="Menu" role="button" onclick="openNav()"></span>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="menu-icon fa fa-bars"></span>
+					</button>
+					<a class="navbar-brand" href="#">#nwfasa17</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#welcome">Welcome</a></li>
+						<li><a href="#program">Program</a></li>
+						<li><a href="#workshops">Workshops</a></li>
+						<li><a href="#keynote-speaker">Keynote Speaker</a></li>
+						<li><a href="#sponsors">Sponsors</a></li>
+					</ul>
+				</div>
 			</div>
-		</aside>
-	-->
+		</nav>
 
 		<header>
 			<img class="logo" src="images/header-logo.png" alt="Isang Bagsak: Moving Forward in Solidarity">
@@ -152,71 +144,75 @@
 				</div>
 
 				<div class="container">
-					<div class="workshop social col-xs-12 col-md-6" role="btn">
+					<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">1</span>
 						<span class="name">Cross The Line</span>
+						<span class="pillar" style="display: none"></span>
 					</div>
-					<div class="workshop social col-xs-12 col-md-6" role="btn">
+					<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">2</span>
 						<span class="name"><i>TALAGANG</i> SLAYING!</span>
+						<span class="pillar" style="display: none"></span>
 					</div>
-					<div class="workshop social col-xs-12 col-md-6" role="btn">
+					<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">3</span>
 						<span class="name">Pin@y Zumba</span>
+						<span class="pillar" style="display: none"></span>
 					</div>
-					<div class="workshop social col-xs-12 col-md-6" role="btn">
+					<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">4</span>
 						<span class="name">TBA</span>
+						<span class="pillar" style="display: none"></span>
 					</div>
 
-					<div class="workshop political col-xs-12 col-md-6" role="btn">
+					<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">5</span>
 						<span class="name"><i>Kamayan</i>: Taking Liberation Into Our Own Hands</span>
 					</div>
-					<div class="workshop political col-xs-12 col-md-6" role="btn">
+					<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">6</span>
 						<span class="name">Dismantling anti-blackness in the Pilipinx community</span>
 					</div>
-					<div class="workshop political col-xs-12 col-md-6" role="btn">
+					<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">7</span>
 						<span class="name">Through their Eyes to Our's: Creating Unity with an Ocean Between</span>
 					</div>
-					<div class="workshop political col-xs-12 col-md-6" role="btn">
+					<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">8</span>
 						<span class="name">From the PNW to the Philippines - Typhoon Nina and Calling Youth and Students to Action</span>
 					</div>
-					<div class="workshop political col-xs-12 col-md-6" role="btn">
+					<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">9</span>
 						<span class="name">One Billion Rising</span>
 					</div>
 					<div class="workshop-spacer col-md-6 hidden-xs hidden-sm"></div>
 
-					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+					<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">10</span>
 						<span class="name">Take Back Our Education: People First, Not Profit and War</span>
 					</div>
-					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+					<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">11</span>
 						<span class="name">Meaningful Work: Leading Lives of Purpose & Impact</span>
 					</div>
-					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+					<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">12</span>
 						<span class="name">Don’t <i>Dabog</i>: Engaging in Call-Out Culture and Practicing Humility and Grace</span>
 					</div>
-					<div class="workshop educational col-xs-12 col-md-6" role="btn">
+					<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">13</span>
 						<span class="name">Failure and Growth</span>
 					</div>
 
-					<div class="workshop cultural col-xs-12 col-md-6" role="btn">
+					<div class="workshop cultural col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">14</span>
 						<span class="name">Filipino Martial Arts</span>
 					</div>
-					<div class="workshop cultural col-xs-12 col-md-6" role="btn">
+					<div class="workshop cultural col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">15</span>
 						<span class="name">The Heart of Activism: Taboo or Nah?</span>
 					</div>
-					<div class="workshop cultural col-xs-12 col-md-6" role="btn">
+					<div class="workshop cultural col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details" onclick="prepareDetails()">
 						<span class="num">16</span>
 						<span class="name">Music of the Motherland</span>
 					</div>
@@ -237,22 +233,21 @@
 
 		</main>
 
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#workshop-details">Open Modal</button>
-
 		<aside id="workshop-details" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal"><span class="fa fa-window-close"></span></button>
-						<h3 class="modal-title">Workshop #<span class="num">1</span></h3>
-						<h4 class="subtitle"><span class="name">Cross The Line</span></h4>
+						<h3 class="modal-title">Workshop #<span class="num"></span></h3>
+						<h4 class="subtitle name"></h4>
+						<h5 class="subtitle location"></h5>
 					</div>
 					<div class="modal-body">
-						“Cross the Line” is a powerful, interactive, and effective activity that builds diversity awareness within a group. We are going to help identify the similarities and differences we have amongst each other. We want to acknowledge and address those differences, but also bring to the surface other differences that we may not have recognized. The goals of this activity include helping participants learn about themselves, providing them with opportunity to reflect upon their self- and cultural identity, allowing the community involved to appreciate its own diversity more and learning to treat each other like the diverse human beings we all are, instead of allowing ourselves to be divided by our diversity. We want to empower the group by breaking down stereotypes and assumptions, produced by our cultures and experiences, and make it easier to know one another as human beings.
 					</div>
 					<div class="modal-footer">
-						<h5 class="subtitle">By Christine Tabila and Kennaro Samrith</h5>
+						<h5>Pillar: <span class="pillar"></span></h5>
+						<h5>Presenters: <span class="presenters"></span></h5>
 					</div>
 				</div>
 
@@ -266,7 +261,7 @@
 		</footer>
 
 		<!-- TODO: email redirect -->
-		<!-- TODO: emergency contacts modal -->
+		<!-- TODO: parking modal -->
 
 	</body>
 </html>

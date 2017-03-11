@@ -89,12 +89,20 @@ footer > .footer-action .fa-home
 	0%
 	{
 		opacity: 0;
+		top: -100px;
 	}
 
 	100%
 	{
 		opacity: 1;
+		top: 0;
 	}
+}
+
+.navbar-nav li > a
+{
+	color: #333;
+	font-size: 2rem;
 }
 
 .navbar.affix
@@ -342,6 +350,8 @@ footer > .footer-action .fa-home
 
 .modal-body
 {
+	max-height: 50vh;
+	overflow: auto;
 	padding-left: 30px;
 	padding-right: 30px;
 }
