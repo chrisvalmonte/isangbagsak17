@@ -6,6 +6,7 @@ $(document).ready(function() {
 		offset: 300,
 	});
 
+
 	var $navbar = $('#navbar');
 	$navbar.affix({ offset: { top: $navbar.height() } });
 
