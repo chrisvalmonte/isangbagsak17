@@ -10,6 +10,7 @@ body
 {
 	background-color: #fcfcfc;
 	font-size: 16px;
+	position: relative;
 }
 
 header
@@ -55,6 +56,13 @@ footer > .footer-action .fa-home
 	padding-top: 5px;
 }
 
+main .pillar,
+main .description,
+main .presenters
+{
+	display: none !important;
+}
+
 
 
 .instagram-media
@@ -84,6 +92,29 @@ footer > .footer-action .fa-home
 	}
 }
 
+.navbar-nav li > a
+{
+	color: #333;
+	font-size: 2rem;
+}
+
+.navbar-nav li.active
+{
+	background: #333;
+}
+
+.navbar-nav li.active > a
+{
+	color: #fcfcfc;
+}
+
+.navbar-nav li > a:hover,
+.navbar-nav li.active > a:hover
+{
+	background: initial;
+}
+
+
 @keyframes navbar-affix
 {
 	0%
@@ -97,12 +128,6 @@ footer > .footer-action .fa-home
 		opacity: 1;
 		top: 0;
 	}
-}
-
-.navbar-nav li > a
-{
-	color: #333;
-	font-size: 2rem;
 }
 
 .navbar.affix
@@ -332,7 +357,7 @@ footer > .footer-action .fa-home
 
 .modal-header .close
 {
-	font-size: 2em;
+	font-size: 2.5rem;
 	position: absolute;
 	right: 15px;
 }
@@ -348,15 +373,12 @@ footer > .footer-action .fa-home
 	text-align: center;
 }
 
-.modal-body
-{
-	max-height: 50vh;
-	overflow: auto;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
 .modal-footer
 {
 	border-top: none;
+}
+
+.modal-footer > h5
+{
+	text-align: left;
 }
