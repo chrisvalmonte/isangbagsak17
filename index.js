@@ -26,7 +26,14 @@ $(document).ready(function() {
 
 
 
-function workshopDetailsClear ()
+function animateScrollTop()
+{
+	$('html body').animate({scrollTop: 0});
+}
+
+
+
+function workshopDetailsClear()
 {
 	var $workshopDetails = $(this);
 	$workshopDetails.find('.description').text('');
@@ -39,7 +46,7 @@ function workshopDetailsClear ()
 
 
 
-function workshopDetailsPrepare ()
+function workshopDetailsPrepare()
 {
 	var $workshopClone = $(this).clone(true, true);
 	var description 	= $workshopClone.find('.description').text();

@@ -37,8 +37,8 @@ footer > .footer-action
 
 footer > .footer-action .fa-home
 {
-	font-size: 2.8rem;
-	padding-top: 5px;
+	font-size: 2.9rem;
+	padding-top: 3px;
 }
 
 main .pillar,
@@ -127,7 +127,8 @@ main .presenters
 	z-index: 10;
 }
 
-.navbar-brand
+.navbar-brand,
+.navbar-brand:visited
 {
 	color: #000;
 	font-size: 1.5em;
@@ -344,12 +345,42 @@ main .presenters
 	text-align: center;
 }
 
-.sponsor-logo
+.sponsor-logo,
+.sponsor-logo2
 {
 	display: block;
-	margin: 0 auto;
-	max-width: 400px;
-	width: 100%;
+	margin: 20px auto;
+	max-height: 200px;
+	max-width: 300px;
+}
+
+@media screen and (min-width: 992px)
+{
+	.sponsor-logo2
+	{
+		margin-top: 100px;
+	}
+}
+
+
+
+#author
+{
+	float: right;
+	font-size: .9rem;
+	margin-right: 5px;
+	margin-top: -65px;
+}
+
+#author a
+{
+	color: #333;
+}
+
+#author a:hover
+{
+	color: #333;
+	text-decoration: none;
 }
 
 
