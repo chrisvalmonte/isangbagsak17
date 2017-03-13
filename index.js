@@ -26,13 +26,6 @@ $(document).ready(function() {
 
 
 
-function animateScrollTop()
-{
-	$('html body').animate({scrollTop: 0});
-}
-
-
-
 function workshopDetailsClear()
 {
 	var $workshopDetails = $(this);
