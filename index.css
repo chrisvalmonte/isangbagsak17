@@ -270,10 +270,18 @@ main .location
 
 
 
-#keynote-speaker embed
+#keynote-speaker img,
+#keynote-speaker p
 {
-	height: 50vh;
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
 	width: 100%;
+}
+
+#keynote-speaker p
+{
+	padding-top: 20px;
 }
 
 
@@ -425,6 +433,26 @@ main .location
 	{
 		padding-top: 35px;
 	}
+}
+
+
+
+#hotel .modal-body
+{
+	height: 60vh;
+	padding: 0;
+}
+
+#hotel .modal-footer
+{
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+
+#hotel embed
+{
+	height: 100%;
+	width: 100%;
 }
 
 
