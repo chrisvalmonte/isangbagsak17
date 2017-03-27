@@ -16,7 +16,7 @@ body
 header > .logo
 {
 	display: block;
-	margin: 8vh auto 15vh auto;
+	margin: 8vh auto 20vh auto;
 	max-height: 70vh;
 	max-width: 100%;
 	width: auto;
@@ -43,7 +43,8 @@ footer > .footer-action .fa-home
 
 main .pillar,
 main .description,
-main .presenters
+main .presenters,
+main .location
 {
 	display: none !important;
 }
@@ -67,9 +68,27 @@ main .presenters
 	margin-bottom: 0;
 }
 
+@media screen and (max-width: 767px)
+{
+	.navbar-brand > img
+	{
+		margin-top: -10px;
+		max-width: 40px;
+	}
+}
+
 @media screen and (min-width: 768px)
 {
-	.navbar-brand,
+	.navbar-brand > img
+	{
+		margin-top: -5px;
+		max-width: 50px;
+	}
+}
+
+
+@media screen and (min-width: 768px)
+{
 	.navbar-nav > li > a
 	{
 		padding-bottom: 25px;
@@ -127,19 +146,6 @@ main .presenters
 	z-index: 10;
 }
 
-.navbar-brand,
-.navbar-brand:visited
-{
-	color: #000;
-	font-size: 1.5em;
-}
-
-.navbar-brand:hover,
-.navbar-brand:focus
-{
-	text-decoration: none;
-}
-
 .navbar-toggle
 {
 	margin-right: 15px;
@@ -163,6 +169,11 @@ main .presenters
 	padding-top: 30px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+#program .section-title
+{
+	padding-top: 0;
 }
 
 
@@ -196,7 +207,10 @@ main .presenters
 
 #program
 {
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	font-family: 'Oswald', sans-serif;
+	margin-top: 30px;
 }
 
 #program .container
@@ -204,12 +218,16 @@ main .presenters
 	border-bottom: 1px solid #ddd;
 }
 
+#program h2,
+#program h4
+{
+	text-align: center;
+}
+
 #program h2
 {
-	border-top: 1px solid #ddd;
 	margin-top: -15px;
 	padding-top: 10px;
-	text-align: center;
 }
 
 #program .itinerary
@@ -243,6 +261,11 @@ main .presenters
 	{
 		font-size: 1.6em;
 	}
+}
+
+#program .fa-map-marker
+{
+	margin-right: 5px;
 }
 
 
@@ -337,39 +360,36 @@ main .presenters
 	margin-bottom: 100px;
 }
 
-#sponsors > h3
+#sponsors .section-title
 {
-	font-family: 'Oswald', sans-serif;
-	margin-bottom: 20px;
-	margin-top: -30px;
-	text-align: center;
+	padding-bottom: 0;
 }
 
-.sponsor-logo,
-.sponsor-logo2
+.sponsor-logo
 {
 	display: block;
 	margin: 20px auto;
-	max-height: 200px;
-	max-width: 300px;
+	width: 100%;
 }
 
-@media screen and (min-width: 992px)
+
+
+#parking img
 {
-	.sponsor-logo2
-	{
-		margin-top: 100px;
-	}
+	display: block;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 
 #author
 {
-	float: right;
-	font-size: .9rem;
-	margin-right: 5px;
-	margin-top: -65px;
+	float: left;
+	font-size: 1.5rem;
+	margin-left: 5px;
+	margin-top: -75px;
 }
 
 #author a
