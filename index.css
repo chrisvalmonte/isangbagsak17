@@ -270,6 +270,14 @@ main .location
 
 
 
+#keynote-speaker embed
+{
+	height: 50vh;
+	width: 100%;
+}
+
+
+
 #workshops > h3
 {
 	font-family: 'Oswald', sans-serif;
