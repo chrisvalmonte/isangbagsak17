@@ -369,7 +369,54 @@ main .location
 {
 	display: block;
 	margin: 20px auto;
+	max-height: 250px;
+	max-width: 250px;
 	width: 100%;
+}
+
+@media screen and (min-width: 768px)
+{
+	.faanps
+	{
+		max-height: 125px;
+		max-width: 125px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+	.hood-famous
+	{
+		padding-top: 35px;
+	}
+
+	.big-boys
+	{
+		padding-top: 40px;
+	}
+
+	.give-butter
+	{
+		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 992px)
+{
+	.hood-famous
+	{
+		padding-top: 20px;
+	}
+
+	.big-boys
+	{
+		padding-top: 25px;
+	}
+
+	.give-butter
+	{
+		padding-top: 35px;
+	}
 }
 
 
