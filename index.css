@@ -369,56 +369,30 @@ main .location
 }
 
 
-
-@media screen and (max-width: 500px)
-{
-	#committee .card-container1,
-	#committee .card-container2
-	{
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 501px)
-{
-	#committee .card-container1,
-	#committee .card-container2
-	{
-		float: left;
-		height: 50vh;
-		max-height: 300px;
-	}
-
-	#committee .card-container1
-	{
-		width: calc(100vw/3);
-	}
-
-	#committee .card-container2
-	{
-		width: calc(100vw/4);
-	}
-}
-
-#committee .card,
-#committee .card-content > .name,
-#committee .card-content > .position,
-#committee img
+#committee img,
+#committee .info > .name,
+#committee .info > .position
 {
 	display: block;
 	margin: 0 auto;
 }
 
-#committee .card
-{
-	height: 100%;
-	width: 75%;
-}
-
-#committee .card-content > .name,
-#committee .card-content > .position
+#committee .info > .name,
+#committee .info > .position
 {
 	text-align: center;
+}
+
+#committee .info > .name
+{
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+#committee .info > .position
+{
+	font-style: italic;
+	padding-bottom: 30px;
 }
 
 #committee img
@@ -499,7 +473,9 @@ main .location
 
 #hotel .modal-body
 {
+	-webkit-overflow-scrolling: touch;
 	height: 60vh;
+	overflow-y: scroll;
 	padding: 0;
 }
 
