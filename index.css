@@ -216,13 +216,8 @@ main .location
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 	font-family: 'Oswald', sans-serif;
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 	margin-top: 30px;
-}
-
-#program .section-title
-{
-	padding-top: 0;
 }
 
 #program .container
@@ -469,24 +464,16 @@ main .location
 
 
 
-#hotel .modal-body
+#hotel img
 {
-	-webkit-overflow-scrolling: touch;
-	height: 60vh;
-	overflow-y: scroll;
-	padding: 0;
+	height: auto;
+	width: 100%;
 }
 
 #hotel .modal-footer
 {
 	border-top: 1px solid #ddd;
 	text-align: center;
-}
-
-#hotel embed
-{
-	height: 100%;
-	width: 100%;
 }
 
 
