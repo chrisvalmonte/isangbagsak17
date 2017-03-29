@@ -13,15 +13,6 @@ body
 	position: relative;
 }
 
-header > .logo
-{
-	display: block;
-	margin: 8vh auto 20vh auto;
-	max-height: 70vh;
-	max-width: 100%;
-	width: auto;
-}
-
 footer.navbar-fixed-bottom
 {
 	background-color: #d9d9d9;
@@ -158,8 +149,6 @@ main .location
 	font-size: 2.5rem;
 }
 
-
-
 .section-title
 {
 	color: #111;
@@ -171,9 +160,18 @@ main .location
 	text-transform: uppercase;
 }
 
-#program .section-title
+
+
+#logo
 {
-	padding-top: 0;
+	background-image: url('images/header-logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 75vh;
+	margin-bottom: 10vh;
+	margin-top: 5vh;
+	width: 100%;
 }
 
 
@@ -210,7 +208,13 @@ main .location
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 	font-family: 'Oswald', sans-serif;
+	padding-bottom: 15px;
 	margin-top: 30px;
+}
+
+#program .section-title
+{
+	padding-top: 0;
 }
 
 #program .container
@@ -306,6 +310,7 @@ main .location
 	cursor: pointer;
 	margin-bottom: 10px;
 	overflow: hidden;
+	padding: 15px;
 	text-overflow: ellipsis;
 	transition: background 200ms ease-out;
 	white-space: nowrap;
@@ -343,30 +348,13 @@ main .location
 	color: #fff;
 }
 
-.workshop > .num,
 .workshop > .name
 {
 	font-family: 'Oswald', sans-serif;
-}
-
-.workshop > .num
-{
-	display: inline-block;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	width: 1.3em;
-}
-
-.workshop > .num::after
-{
-	content: '.';
-}
-
-.workshop > .name,
-.workshop > .num
-{
 	font-size: 2em;
+
 }
+
 
 
 #committee img,

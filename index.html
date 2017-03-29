@@ -13,13 +13,11 @@
 		<link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="index.css">
 
-
+		<script defer type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script defer type="text/javascript" src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script defer type="text/javascript" src="index.js"></script>
 		<!-- Instagram video -->
 		<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="index.js"></script>
 	</head>
 
 	<body>
@@ -46,7 +44,10 @@
 		</nav>
 
 		<header>
+			<!--
 			<img class="logo" src="images/header-logo.png" alt="Isang Bagsak: Moving Forward in Solidarity">
+			-->
+			<div id="logo"></div>
 		</header>
 
 		<main>
@@ -155,7 +156,6 @@
 				<h3>(Click on a workshop for more info)</h3>
 
 				<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">1</span>
 					<span class="name">Cross The Line</span>
 					<span class="location">UW2 031</span>
 					<span class="pillar">Social</span>
@@ -163,7 +163,6 @@
 					<span class="presenters">Christine Tabila and Kennaro Samrith</span>
 				</div>
 				<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">2</span>
 					<span class="name"><i>TALAGANG</i> SLAYING!</span>
 					<span class="location">UW2 021</span>
 					<span class="pillar">Social</span>
@@ -171,7 +170,6 @@
 					<span class="presenters">Michael Solitaria, Kyle Dela Cruz, and Chloe Tanega</span>
 				</div>
 				<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">3</span>
 					<span class="name">Pin@y Zumba</span>
 					<span class="location">UW2 131</span>
 					<span class="pillar">Social</span>
@@ -179,16 +177,22 @@
 					<span class="presenters">Trisha Fey Elizarde-Miller</span>
 				</div>
 				<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">4</span>
 					<span class="name">Making a Difference: A Top-down Approach</span>
 					<span class="location">UW2 141</span>
 					<span class="pillar">Social</span>
 					<div class="description">Our workshop will focus on providing methodologies and techniques that can help you succeed in goal-setting and goal-achievement. Whether it is reaching that hot summer-bod or landing a summer internship, this workshop will offer tools that can  assist you in building a versatile framework and lead you down a pathway to making a difference. In particular, our paradigm focuses on the end goal and how you can make decisions and choices to reach it; AKA A Top Down Approach.</div>
 					<span class="presenters">Rachel Ramirez and Kevin Le</span>
 				</div>
+				<div class="workshop social col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
+					<span class="name">F.A: A Workshop On How Our Generational Experiences Influence our Identity</span>
+					<span class="location">UW2 140</span>
+					<span class="pillar">Social</span>
+					<div class="description">“F.A.: A Workshop on How Our Generational Experiences Influence Our Identity” reflects how our varying communities and upbringings allowed us as Filipinos or Filipino-Americans to face our legacies. We will explore how our communities affected our introduction and perception of our pasts and identities.</div>
+					<span class="presenters">Alec Cuison, Ian Atienza, Joseph Macalma, Erika Aranca, Alex Yi and Julio Dizon</span>
+				</div>
+
 
 				<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">5</span>
 					<span class="name">Dismantling anti-blackness in the Pilipinx community</span>
 					<span class="location">UW1 210</span>
 					<span class="pillar">Political</span>
@@ -196,7 +200,6 @@
 					<span class="presenters">Hunter Eider</span>
 				</div>
 				<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">6</span>
 					<span class="name">Through their Eyes to Our's: Creating Unity with an Ocean Between</span>
 					<span class="location">UW1 202</span>
 					<span class="pillar">Political</span>
@@ -204,7 +207,6 @@
 					<span class="presenters">Joseph Edward Gonzales and Jhustin Custodio</span>
 				</div>
 				<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">7</span>
 					<span class="name">From the PNW to the Philippines - Typhoon Nina and Calling Youth and Students to Action</span>
 					<span class="location">UW1 220</span>
 					<span class="pillar">Political</span>
@@ -212,7 +214,6 @@
 					<span class="presenters">Kenneth Crebillo</span>
 				</div>
 				<div class="workshop political col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">8</span>
 					<span class="name">One Billion Rising</span>
 					<span class="location">UW1 221</span>
 					<span class="pillar">Political</span>
@@ -221,7 +222,6 @@
 				</div>
 
 				<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">9</span>
 					<span class="name">Take Back Our Education: People First, Not Profit and War</span>
 					<span class="location">UW1 010</span>
 					<span class="pillar">Educational</span>
@@ -229,7 +229,6 @@
 					<span class="presenters">Nikko Francisco and Henry Luke</span>
 				</div>
 				<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">10</span>
 					<span class="name">Reality of Isang Bagsak: State of the Alliance</span>
 					<span class="location">UW1 020</span>
 					<span class="pillar">Educational</span>
@@ -237,7 +236,6 @@
 					<span class="presenters">Erick Yanzon and Kristine Maramot</span>
 				</div>
 				<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">11</span>
 					<span class="name">Failure and Growth</span>
 					<span class="location">UW1 030</span>
 					<span class="pillar">Educational</span>
@@ -245,7 +243,6 @@
 					<span class="presenters">Cedric Bella and Stephanie Guray</span>
 				</div>
 				<div class="workshop educational col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">12</span>
 					<span class="name"><i>Kamayan</i>: Taking Liberation Into Our Own Hands</span>
 					<span class="location">UW1 040</span>
 					<span class="pillar">Educational</span>
@@ -254,7 +251,6 @@
 				</div>
 
 				<div class="workshop cultural col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">13</span>
 					<span class="name">Filipino Martial Arts</span>
 					<span class="location">UW1 060</span>
 					<span class="pillar">Cultural</span>
@@ -262,7 +258,6 @@
 					<span class="presenters">Gyles Batara</span>
 				</div>
 				<div class="workshop cultural col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">14</span>
 					<span class="name">The Heart of Activism: Taboo or Nah?</span>
 					<span class="location">UW1 041</span>
 					<span class="pillar">Cultural</span>
@@ -270,7 +265,6 @@
 					<span class="presenters">Nikki De Leon</span> <!-- TODO -->
 				</div>
 				<div class="workshop cultural col-xs-12 col-md-6" role="button" data-toggle="modal" data-target="#workshop-details">
-					<span class="num">15</span>
 					<span class="name">Don’t <i>Dabog</i>: Engaging in Call-Out Culture and Practicing Humility and Grace</span>
 					<span class="location">UW1 050</span>
 					<span class="pillar">Cultural</span>
@@ -396,8 +390,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal"><span class="fa fa-window-close"></span></button>
-						<h3 class="modal-title">Workshop #<span class="num"></span></h3>
-						<h4 class="subtitle name"></h4>
+						<h4 class="modal-title name"></h4>
 						<h5 class="subtitle location"></h5>
 					</div>
 					<div class="description modal-body">

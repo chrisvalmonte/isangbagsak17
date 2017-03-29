@@ -31,7 +31,6 @@ function workshopDetailsClear()
 	var $workshopDetails = $(this);
 	$workshopDetails.find('.description').text('');
 	$workshopDetails.find('.location').text('');
-	$workshopDetails.find('.num').text('');
 	$workshopDetails.find('.name').text('');
 	$workshopDetails.find('.pillar').text('');
 	$workshopDetails.find('.presenters').text('');
@@ -44,7 +43,6 @@ function workshopDetailsPrepare()
 	var $workshopClone = $(this).clone(true, true);
 	var description 	= $workshopClone.find('.description').text();
 	var location 			= $workshopClone.find('.location').text();
-	var num 					= $workshopClone.find('.num').text();
 	var name 					= $workshopClone.find('.name').text();
 	var pillar 				= $workshopClone.find('.pillar').text();
 	var presenters	 	= $workshopClone.find('.presenters').text();
@@ -53,7 +51,6 @@ function workshopDetailsPrepare()
 	var $workshopDetails = $('#workshop-details');
 	var $wdDescription 	= $workshopDetails.find('.description');
 	var $wdLocation 		= $workshopDetails.find('.location');
-	var $wdNum 					= $workshopDetails.find('.num');
 	var $wdName 				= $workshopDetails.find('.name');
 	var $wdPillar 			= $workshopDetails.find('.pillar');
 	var $wdPresenters 	= $workshopDetails.find('.presenters');
@@ -61,7 +58,6 @@ function workshopDetailsPrepare()
 
 	$wdDescription.append(description);
 	$wdLocation.append(location);
-	$wdNum.append(num);
 	$wdName.append(name);
 	$wdPillar.append(pillar);
 	$wdPresenters.append(presenters);
