@@ -464,10 +464,11 @@ main .location
 
 
 
-#hotel img
+#hotel .modal-body
 {
-	height: auto;
-	width: 100%;
+	height: 60vh;
+	overflow: auto;
+	padding: 0;
 }
 
 #hotel .modal-footer
