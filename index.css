@@ -466,7 +466,7 @@ main .location
 
 #hotel .modal-body
 {
-	height: 60vh;
+	height: 50vh;
 	overflow: auto;
 	padding: 0;
 }
