@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	var $body = $('body');
 	$body.scrollspy({
-		target: '#navbar',
+		target: '#site-nav',
 		offset: 300,
 	});
 
