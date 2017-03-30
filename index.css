@@ -177,11 +177,12 @@ main .location
 	width: 100%;
 }
 
-@media screen and (max-width: 767px)
+@media screen and (max-height: 420px)
 {
 	#logo
 	{
-		margin-top: 0;
+		height: 60vh;
+		margin-top: 12vh;
 	}
 }
 
