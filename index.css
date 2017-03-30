@@ -45,6 +45,14 @@ main .location
 	display: none !important;
 }
 
+@media screen and (min-width: 768px)
+{
+	section
+	{
+		padding-top: 30px;
+	}
+}
+
 
 
 .instagram-media
@@ -118,7 +126,6 @@ main .location
 .navbar-nav li.active
 {
 	background: #333;
-	transition: background 150ms ease-in-out;
 }
 
 .navbar-nav li.active > a
@@ -127,7 +134,9 @@ main .location
 }
 
 .navbar-nav li > a:hover,
-.navbar-nav li.active > a:hover
+.navbar-nav li.active > a:hover,
+.navbar-nav li > a:focus,
+.navbar-nav li.active > a:focus
 {
 	background: initial;
 }

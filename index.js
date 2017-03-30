@@ -21,6 +21,13 @@ $(document).ready(function() {
 
 	var $workshopDetails = $('#workshop-details');
 	$workshopDetails.on('hidden.bs.modal', workshopDetailsClear);
+
+	var $root = $('html, body');
+	$('a').on('click',function() {
+		var href = $.attr(this, 'href');
+		$root.animate({ scrollTop: $(href).offset().top }, 500);
+		return false;
+	});
 });
 
 
