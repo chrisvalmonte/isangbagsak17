@@ -76,7 +76,7 @@ main .location
 	position: fixed;
 	transition-duration: 500ms;
 	transition-property: box-shadow;
-	top: .1px;
+	top: 0;
 	width: 100%;
 	z-index: 10;
 }
