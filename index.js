@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
 	var $navbar = $('#navbar');
-	$navbar.affix({ offset: { top: $navbar.height() } });
+	$navbar.affix();
 
 	var $navLink = $navbar.find('.nav a');
 	$navLink.on('click', function() {
@@ -21,7 +21,6 @@ $(document).ready(function() {
 
 	var $workshopDetails = $('#workshop-details');
 	$workshopDetails.on('hidden.bs.modal', workshopDetailsClear);
-
 });
 
 

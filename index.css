@@ -52,11 +52,14 @@ main .location
 
 .navbar
 {
-	background-color: transparent;
-	border: none;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #d9d9d9;
+	border-radius: 0;
 	box-shadow: none;
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: 0;
+	position: fixed;
+	width: 100%;
 }
 
 @media screen and (max-width: 767px)
@@ -110,28 +113,12 @@ main .location
 	background: initial;
 }
 
-
-@keyframes navbar-affix
-{
-	0%
-	{
-		opacity: 0;
-		top: -50px;
-	}
-
-	100%
-	{
-		opacity: 1;
-		top: 0;
-	}
-}
-
 .navbar.affix
 {
-	animation: navbar-affix 500ms ease-in-out;
-	background: #ffd400;
-	box-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, .3);
 	position: fixed;
+	transition-duration: 500ms;
+	transition-property: box-shadow;
 	top: 0;
 	width: 100%;
 	z-index: 10;
@@ -226,7 +213,7 @@ main .location
 }
 
 #program h2,
-#program h4
+#program h5
 {
 	text-align: center;
 }
@@ -329,7 +316,7 @@ main .location
 
 .workshop.social
 {
-	background-color: yellow;
+	background-color: #ffd400;
 	color: #000;
 }
 
@@ -464,6 +451,14 @@ main .location
 
 
 
+#workshop-details .description
+{
+	max-height: 50vh;
+	overflow: auto;
+}
+
+
+
 #hotel .modal-body
 {
 	height: 50vh;
@@ -529,7 +524,7 @@ main .location
 
 .modal-title
 {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .modal-header,
