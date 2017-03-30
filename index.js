@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
 	var $navbar = $('#site-nav');
-	$navbar.affix({ offset: { top: $navbar.height() } });
+	$navbar.affix();
 
 	var $navLink = $navbar.find('.nav a');
 	$navLink.on('click', function() {

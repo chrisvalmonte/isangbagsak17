@@ -63,7 +63,7 @@ main .location
 	box-shadow: none;
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: 0;
-	transition-duration: 220ms;
+	transition-duration: 500ms;
 	transition-property: box-shadow;
 	position: fixed;
 	width: 100%;
@@ -71,22 +71,14 @@ main .location
 
 #site-nav.affix
 {
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, .3);
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, .3);
 	margin-top: 0;
 	position: fixed;
 	transition-duration: 500ms;
 	transition-property: box-shadow;
-	top: 0;
+	top: .1px;
 	width: 100%;
 	z-index: 10;
-}
-
-@media screen and (min-width: 768px)
-{
-	#site-nav
-	{
-		margin-top: -5vh;
-	}
 }
 
 @media screen and (max-width: 767px)
@@ -182,6 +174,14 @@ main .location
 	{
 		height: 60vh;
 		margin-top: 12vh;
+	}
+}
+
+@media screen and (min-width: 768px)
+{
+	#logo
+	{
+		margin-top: 5vh;
 	}
 }
 
