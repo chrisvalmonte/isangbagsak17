@@ -80,6 +80,7 @@ main .location
 	transition-property: box-shadow;
 	position: fixed;
 	width: 100%;
+	z-index: 10;
 }
 
 #site-nav.affix
