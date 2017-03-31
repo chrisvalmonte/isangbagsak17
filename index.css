@@ -18,6 +18,11 @@ header
 	padding-top: 10vh;
 }
 
+main
+{
+	margin-top: 80vh;
+}
+
 footer.navbar-fixed-bottom
 {
 	background-color: #d9d9d9;
@@ -179,7 +184,8 @@ main .location
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 75vh;
-	margin-bottom: 10vh;
+	position: absolute;
+	top: 1%;
 	width: 100%;
 }
 
@@ -188,7 +194,6 @@ main .location
 	#logo
 	{
 		height: 60vh;
-		margin-top: 12vh;
 	}
 }
 
@@ -196,7 +201,7 @@ main .location
 {
 	#logo
 	{
-		margin-top: 5vh;
+		top: 2%;
 	}
 }
 
