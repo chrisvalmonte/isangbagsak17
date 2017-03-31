@@ -430,8 +430,8 @@ main .location
 {
 	display: block;
 	margin: 20px auto;
-	max-height: 150px;
-	max-width: 150px;
+	max-height: 200px;
+	max-width: 200px;
 	width: 100%;
 }
 
