@@ -115,6 +115,11 @@ main .location
 		padding-bottom: 25px;
 		padding-top: 25px;
 	}
+
+	#site-nav .container-fluid
+	{
+	padding-right: 0
+	}
 }
 
 .navbar-nav li > a
@@ -143,9 +148,10 @@ main .location
 
 .navbar-toggle
 {
-	margin-right: 15px;
-	margin-top: 13px;
-	padding: 0;
+	height: 50px;
+	margin: 0;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .menu-icon
@@ -424,8 +430,8 @@ main .location
 {
 	display: block;
 	margin: 20px auto;
-	max-height: 250px;
-	max-width: 250px;
+	max-height: 150px;
+	max-width: 150px;
 	width: 100%;
 }
 
@@ -505,6 +511,12 @@ main .location
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#parking .modal-body
+{
+	max-height: 60vh;
+	overflow: auto;
 }
 
 
