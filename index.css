@@ -262,7 +262,6 @@ main .location
 }
 
 #program h2,
-#program h3,
 #program h5
 {
 	text-align: center;
@@ -272,11 +271,6 @@ main .location
 {
 	margin-top: -15px;
 	padding-top: 10px;
-}
-
-#program h3
-{
-	color: #f00;
 }
 
 #program .itinerary
