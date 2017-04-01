@@ -13,9 +13,20 @@ body
 	position: relative;
 }
 
-header
+@media screen and (max-width: 767px)
 {
-	padding-top: 10vh;
+	header
+	{
+		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 768px)
+{
+	header
+	{
+		padding-top: 80px;
+	}
 }
 
 footer.navbar-fixed-bottom
@@ -178,7 +189,6 @@ main .location
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	height: 75vh;
 	margin-bottom: 10vh;
 	width: 100%;
 }
@@ -187,8 +197,16 @@ main .location
 {
 	#logo
 	{
-		height: 60vh;
 		margin-top: 12vh;
+		max-height: 60vh;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	#logo
+	{
+		height: calc(100vh - 100px);
 	}
 }
 
@@ -196,7 +214,7 @@ main .location
 {
 	#logo
 	{
-		margin-top: 5vh;
+		height: calc(100vh - 120px);
 	}
 }
 
