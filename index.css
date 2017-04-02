@@ -313,21 +313,21 @@ main .location
 
 
 
-#keynote-speaker img,
-#keynote-speaker p
+#speakers img,
+#speakers p
 {
 	display: block;
 	margin: 0 auto;
 	max-width: 600px;
 }
 
-#keynote-speaker img
+#speakers img
 {
 	height: auto;
 	width: 100%;
 }
 
-#keynote-speaker p
+#speakers p
 {
 	padding-top: 20px;
 }
