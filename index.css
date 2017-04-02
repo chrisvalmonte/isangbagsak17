@@ -539,6 +539,18 @@ main .location
 
 
 
+#thank-you .modal-title
+{
+	font-family: 'Oswald', sans-serif;
+}
+
+#thank-you .signature
+{
+	padding-left: 15px;
+}
+
+
+
 #author
 {
 	float: left;

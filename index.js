@@ -28,6 +28,13 @@ $(document).ready(function() {
 		$root.animate({ scrollTop: $(href).offset().top }, 500);
 		return false;
 	});
+
+});
+
+
+
+$(window).on ('load', function() {
+	$('#thank-you').modal('show');
 });
 
 
