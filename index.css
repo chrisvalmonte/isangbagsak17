@@ -544,12 +544,6 @@ main .location
 	font-family: 'Oswald', sans-serif;
 }
 
-#thank-you .modal-body
-{
-	max-height: 50vh;
-	overflow: auto;
-}
-
 #thank-you .signature
 {
 	padding-left: 15px;
