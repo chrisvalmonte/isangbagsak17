@@ -22,19 +22,18 @@ $(document).ready(function() {
 	var $workshopDetails = $('#workshop-details');
 	$workshopDetails.on('hidden.bs.modal', workshopDetailsClear);
 
-	var $root = $('html, body');
-	$('a').on('click',function() {
+
+	$navLink.on('click',function() {
 		var href = $.attr(this, 'href');
-		$root.animate({ scrollTop: $(href).offset().top }, 500);
+		$body.animate({ scrollTop: $(href).offset().top }, 500);
 		return false;
 	});
 
-});
 
-
-
-$(window).on ('load', function() {
-	$('#thank-you').modal('show');
+  if(Cookies.get('nwfasa-thank-you') !== 'displayed') {
+    $('#thank-you').modal('show')
+    Cookies.set('nwfasa-thank-you', 'displayed', { expires: 1 });
+  }
 });
 
 
@@ -54,19 +53,19 @@ function workshopDetailsClear()
 function workshopDetailsPrepare()
 {
 	var $workshopClone = $(this).clone(true, true);
-	var description 	= $workshopClone.find('.description').text();
-	var location 			= $workshopClone.find('.location').text();
-	var name 					= $workshopClone.find('.name').text();
-	var pillar 				= $workshopClone.find('.pillar').text();
-	var presenters	 	= $workshopClone.find('.presenters').text();
+	var description = $workshopClone.find('.description').text();
+	var location = $workshopClone.find('.location').text();
+	var name = $workshopClone.find('.name').text();
+	var pillar = $workshopClone.find('.pillar').text();
+	var presenters = $workshopClone.find('.presenters').text();
 
 
 	var $workshopDetails = $('#workshop-details');
-	var $wdDescription 	= $workshopDetails.find('.description');
-	var $wdLocation 		= $workshopDetails.find('.location');
-	var $wdName 				= $workshopDetails.find('.name');
-	var $wdPillar 			= $workshopDetails.find('.pillar');
-	var $wdPresenters 	= $workshopDetails.find('.presenters');
+	var $wdDescription = $workshopDetails.find('.description');
+	var $wdLocation = $workshopDetails.find('.location');
+	var $wdName = $workshopDetails.find('.name');
+	var $wdPillar = $workshopDetails.find('.pillar');
+	var $wdPresenters = $workshopDetails.find('.presenters');
 
 
 	$wdDescription.append(description);
