@@ -1,0 +1,43 @@
+#program {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 30px;
+  margin-top: 30px;
+
+  h2,
+  h5 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: -15px;
+    padding-top: 10px;
+  }
+
+  .container { border-bottom: 1px solid #ddd; }
+
+  .itinerary {
+    display: block;
+    line-height: 30px;
+    list-style: none;
+    margin: 15px auto;
+    max-width: 500px;
+    padding-left: 0;
+  }
+
+  .schedule { float: right; }
+
+  .time,
+  .schedule {
+    @media screen and (max-width: 450px) {
+      font-size: 1.1em;
+    }
+
+    @media screen and (min-width: 451px) {
+      font-size: 1.6em;
+    }
+  }
+
+  .fa-map-marker { margin-right: 5px; }
+} // #program

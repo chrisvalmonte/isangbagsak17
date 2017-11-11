@@ -1,0 +1,63 @@
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background-color: #fcfcfc;
+  font-size: 16px;
+  position: relative;
+}
+
+header {
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+}
+
+footer {
+  &.navbar-fixed-bottom {
+    background-color: #d9d9d9;
+    border-top: 1px solid #bfbfbf;
+  }
+
+  > .footer-action {
+    background: transparent;
+    color: #444;
+    font-size: 2.2rem;
+
+    .fa-home {
+      font-size: 2.9rem;
+      padding-top: 3px;
+    }
+  }
+}
+
+main {
+  .pillar,
+  .description,
+  .presenters,
+  .location {
+  	display: none !important;
+  }
+}
+
+section {
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+
+  .section-title {
+    color: #111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,52 @@
+#workshops {
+  > h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .workshop {
+    border: 3px solid transparent;
+    border-radius: 1px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    text-overflow: ellipsis;
+    transition: background 200ms ease-out;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      background: #000 !important;
+      box-shadow: none;
+      color: #fefefe !important;
+    }
+
+    &.social {
+      background-color: #ffd400;
+      color: #000;
+    }
+
+    &.political {
+      background-color: #fff;
+      color: #000;
+    }
+
+    &.educational {
+      background-color: #1249d4;
+      color: #fff;
+    }
+
+    &.cultural {
+      background-color: #d20607;
+      color: #fff;
+    }
+
+    > .name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2em;
+    }
+  }
+} // #workshops

@@ -1,0 +1,15 @@
+#speakers {
+  img,
+  p {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  p { padding-top: 10px; }
+} // #speakers
