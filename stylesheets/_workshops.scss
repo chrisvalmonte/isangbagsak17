@@ -1,6 +1,11 @@
+@mixin workshop-colors($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
 #workshops {
   > h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: $header-font-family;
     margin-top: -30px;
     text-align: center;
   }
@@ -24,29 +29,14 @@
       color: #fefefe !important;
     }
 
-    &.social {
-      background-color: #ffd400;
-      color: #000;
-    }
-
-    &.political {
-      background-color: #fff;
-      color: #000;
-    }
-
-    &.educational {
-      background-color: #1249d4;
-      color: #fff;
-    }
-
-    &.cultural {
-      background-color: #d20607;
-      color: #fff;
-    }
-
     > .name {
-      font-family: 'Oswald', sans-serif;
+      font-family: $header-font-family;
       font-size: 2em;
     }
+
+    &.social { @include workshop-colors(#ffd400, #000); }
+    &.political { @include workshop-colors(#fff, #000); }
+    &.educational { @include workshop-colors(#1249d4, #fff); }
+    &.cultural { @include workshop-colors(#d20607, #fff); }
   }
 } // #workshops

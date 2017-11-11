@@ -1,9 +1,9 @@
 #site-nav {
-  background-color: #fcfcfc;
+  background-color: $default-bg-color;
   border-bottom: 1px solid #d9d9d9;
   border-radius: 0;
   box-shadow: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: $header-font-family;
   margin-bottom: 0;
   transition-duration: 500ms;
   transition-property: box-shadow;
@@ -25,12 +25,12 @@
   .container-fluid { padding-right: 0 }
 
   .navbar-brand > img {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $xs-screen-max) {
       margin-top: -10px;
       max-width: 40px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $sm-screen-min) {
       margin-top: -5px;
       max-width: 50px;
     }
@@ -41,7 +41,7 @@
       color: #333;
       font-size: 2rem;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $sm-screen-min) {
         padding-bottom: 25px;
         padding-top: 25px;
       }
@@ -50,7 +50,7 @@
     li.active {
       background: #333;
 
-      > a { color: #fcfcfc; }
+      > a { color: #fff; }
     }
 
     li,

@@ -1,4 +1,15 @@
+$xs-screen-max: 767px;
+$sm-screen-min: $xs-screen-max + 1;
+
+$default-bg-color: #fcfcfc;
+$default-text-color: #000;
+$default-font-family: 'Helvetica Neue', 'Open Sans', 'Arial', sans-serif;
+$default-font-size: 16px;
+
 @import url('http://fonts.googleapis.com/css?family=Oswald:300');
+$header-font-family: 'Oswald', sans-serif;
+
+
 
 @import 'semantic-elements';
 @import 'site-nav';

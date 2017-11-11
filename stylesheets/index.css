@@ -4,9 +4,10 @@ body {
   width: 100%; }
 
 body {
-  background-color: #fcfcfc;
-  font-size: 16px;
-  position: relative; }
+  background: #fcfcfc;
+  color: #000;
+  font-family: "Helvetica Neue", "Open Sans", "Arial", sans-serif;
+  font-size: 16px; }
 
 @media screen and (max-width: 767px) {
   header {
@@ -22,10 +23,10 @@ footer > .footer-action {
   background: transparent;
   color: #444;
   font-size: 2.2rem; }
-  footer > .footer-action, footer > .footer-action:hover {
+  footer > .footer-action, footer > .footer-action:hover, footer > .footer-action:focus {
     transition-duration: 300ms;
     transition-property: font-size; }
-  footer > .footer-action:hover {
+  footer > .footer-action:hover, footer > .footer-action:focus {
     font-size: 2.5rem; }
   footer > .footer-action .fa-home {
     font-size: 2.9rem;
@@ -42,7 +43,7 @@ main .location {
     padding-top: 30px; } }
 section .section-title {
   color: #111;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 4em;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -54,7 +55,7 @@ section .section-title {
   border-bottom: 1px solid #d9d9d9;
   border-radius: 0;
   box-shadow: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 0;
   transition-duration: 500ms;
   transition-property: box-shadow;
@@ -90,7 +91,7 @@ section .section-title {
   #site-nav .navbar-nav li.active {
     background: #333; }
     #site-nav .navbar-nav li.active > a {
-      color: #fcfcfc; }
+      color: #fff; }
   #site-nav .navbar-nav li > a:focus,
   #site-nav .navbar-nav li > a:hover,
   #site-nav .navbar-nav li.active > a:focus,
@@ -142,7 +143,7 @@ section .section-title {
 #program {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   padding-bottom: 30px;
   margin-top: 30px; }
   #program h2,
@@ -185,7 +186,7 @@ section .section-title {
   padding-top: 10px; }
 
 #workshops > h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   margin-top: -30px;
   text-align: center; }
 #workshops .workshop {
@@ -203,6 +204,9 @@ section .section-title {
     background: #000 !important;
     box-shadow: none;
     color: #fefefe !important; }
+  #workshops .workshop > .name {
+    font-family: "Oswald", sans-serif;
+    font-size: 2em; }
   #workshops .workshop.social {
     background-color: #ffd400;
     color: #000; }
@@ -215,9 +219,6 @@ section .section-title {
   #workshops .workshop.cultural {
     background-color: #d20607;
     color: #fff; }
-  #workshops .workshop > .name {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em; }
 
 #committee img,
 #committee .info > .name,
@@ -271,7 +272,7 @@ section .section-title {
       padding-top: 35px; } }
 
 #thank-you .modal-title {
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 #thank-you .signature {
   padding-left: 15px; }
 

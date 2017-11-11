@@ -11,14 +11,14 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $sm-screen-min) {
     .faanps {
       max-height: 125px;
       max-width: 125px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: $sm-screen-min) and (max-width: 991px) {
     .hood-famous { padding-top: 35px; }
     .big-boys { padding-top: 40px; }
     .give-butter { padding-top: 50px; }
