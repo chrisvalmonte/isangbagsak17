@@ -1,0 +1,29 @@
+#thank-you {
+  .modal-title { font-family: $header-font-family; }
+  .signature { padding-left: 15px; }
+}
+
+.modal-content { border-radius: 0; }
+
+.modal-header {
+  border-bottom: none;
+
+  .close {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.modal-title { margin-top: 30px; }
+
+.modal-header,
+#workshop-details .subtitle {
+  text-align: center;
+}
+
+.modal-footer {
+  border-top: none;
+
+  > h5 { text-align: left; }
+}

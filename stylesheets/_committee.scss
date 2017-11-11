@@ -1,0 +1,34 @@
+#committee {
+  img,
+  .info > .name,
+  .info > .position {
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 50%;
+  	height: auto;
+  	max-width: 256px;
+  	width: 100%;
+  }
+
+  .info {
+    > .name,
+    > .position {
+      text-align: center;
+    }
+
+    > .name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding-top: 5px;
+    }
+
+    > .position {
+      font-size: 1.2rem;
+      font-style: italic;
+      padding-bottom: 30px;
+    }
+  }
+} // #committee
